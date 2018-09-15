@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+/*  
+       Sintaxis de reglas CSS:
+
+        selector: indicar al navegador cual 
+                  será el elemento que se modificará.
+
+       Lista de propiedades: propiedades que se modifican.
+       
+Selector : {
+            nombre-propiedad: valor;
+            Color:  #f00;
+            font-family: arial;
+            font-size: 30px;
+}
+
+             Selectores básicos: 
+             1.  Etiqueta
+             2.  Clase:
+                    Se utiliza mediante el atributo "class"
+                    El atributo "class" sirve principalmente para añadir estilos CSS
+                    a un determinado elemento.
+
+        Sitaxis del selector: un signo de punto "." como prefijo
+                                                    del valor del atributo. 
+
+             3.  Identificador (no recomendado):
+                    Se utiliza mediante el atributo "id"
+                    El atributo "id" sirve principalmente para añadir comportamientos JavaScript
+                    a un determinado elemento
+
+        Sitaxis del selector: un signo de punto número como valor como prefijo
+                                                    del valor del atributo.
+
+*/
+
+/* Selector por etiqueta*/
+/*p{
+   color:#f00;
+}*/
+
+/* Selector por Clase */
+/*.azul {
+    color: #00f; 
+}*/
+
+/* Selector por ID */
+/*#verde {
+    Color: #0f0;
+
+}*/
+
+body {
+    font-family: arial;
+    /*font-size: 16pxs;*/
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    /*
+    Elementos de bloque se centran con margen (margin)
+    automático a la izquierda y a la derecha. 
+    
+    Elementos en linea se centran con la propiedad "text-align". 
+    
+    A un elemnto en línea podemos darle comportamiento  de bloque con: "display: block".
+    A un elemnto en bloque podemos darle comportamiento  de línea con: "display: inline".
+    
+    */
+}
+
+h1 {
+    font-size: 30px;
+    color: #117AC8;
+    font-weight: normal;
+    
+    /* 
+    200 -> think
+    300 -> light
+    400 -> normal
+    600 -> semibold
+    700 -> bold
+    800 -> black
+    900 -> extra black 
+    
+    */
+    text-transform: uppercase;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #259C18;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #B09015;
+}
+/* 
+   Propiedades del modelo de cajas:
+   
+   -background: Es una propiedad general.
+   -background color: un valor hex
+   -background image: url de la imagen
+   -background repeat: {repeat | no-repeat}
+   -background attachment: {scroll | fixed}
+   -background position: 
+     Posición X: {left | center | rigth | px}
+     Posición Y: {top | center | bottom | px}
+
+   - border
+      -ancho de border en px
+      -estilo de border: {solid, double}
+      -Color del border en hex. 
+
+   - padding: Para establecer un espacio entre el borde y los contenidos. 
+        -1 valor se aplica a los 4 lados
+        -2 valores:
+                primer valor: top/bottom
+                segundo valor: left/rigth 
+        -3 valores:  
+                primer valor: top
+                segundo valor: left/rigth 
+                tercer valor: bottom
+         -4 valores:  
+                primer valor: top
+                segundo valor: rigth 
+                tercer valor: bottom
+                 cuarto valor: left
+
+   -margin: Para establecer el espacio entre el border y otros elementos.
+         -width: valor en [px | % | em]
+         -height valor en [px | % | em]
+*/
+
+.section-services {
+    background: #00f url(../images/2img.jpg) no-repeat center center fixed;
+    
+    /*background-color: #533501;
+    background-repeat: no-repeat;
+    background-image: url(../images/header.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    */
+        /*
+   
+   -background image: url de la imagen
+   -background repeat: {repeat | no-repeat}
+   -background attachment: {scroll | fixed}
+   -background position: 
+     Posición X: {left | center | rigth | px}
+     Posición Y: {top | center | bottom | px}
+    
+    */
+    border: 1px solid #f0f;
+    padding: 10px 20px 30px 40px;
+    margin: 10px; 
+    
+    
+}
+main h2{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #31A882;
+    
+}
+main img {
+    max-width: 300px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 10px #666;
+}
+
+footer {
+    background-color: #666;
+    text-align: center;
+    color: #ccc;
+    padding: 16px 0;
+}
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

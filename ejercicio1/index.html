@@ -4,18 +4,26 @@
 <head>
 <meta charset="UTF-8" />
 <title>Ejercicio 1</title>
+     <!-- 
+           CSS: Hojas de estilo en cascada. 
+                Se puede insertar de dos formas:
+                1 - En linea (inline) -- No recomendado
+                2 - En el documento HTML en un bloque <style>. -- No recomendado pero aceptable 
+                3 - En un documento independiente. --  Recomendado. 
+     -->
+     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <div>
+<div class="container">
     <header>
-    	<h1>Encabezado nivel 1</h1>
-    	<!--<h2>Encabezado nivel 2</h2>
+        <h1>Ejercicio 1</h1>
+        <!--<h2>Encabezado nivel 2</h2>
     	<h3>Encabezado nivel 3</h3>
     	<h4>Encabezado nivel 4</h4>
     	<h5>Encabezado nivel 5</h5>
-    	<h6>Encabezado nivel 6</h6>-->
-    	<!--
+    	<h6>Encabezado nivel 6</h6>--> 
+        <!--
     	   Titulo de libro: El amor en los tiempos del colera -> h1
     	     Capítulo 1: Florentino -> [h2]
     	       Subcapítulo 1.1 -> [h3]
@@ -30,40 +38,104 @@
     	       Subcapítulo 1.2 -> [h3]
     	       Subcapítulo 1.3 -> [h3]
     	   
-    	   -->
-    	   <!-- 
+    	   --> 
+        <!-- 
     	        Rutas relativas:
     	        -  Para entra a una carpeta usamos "/"
     	        -  Para salir de una carpeta usamos ".."
-    	        -->
-    	   
-    	   <img src="images/header.jpg" alt="" />
-      </header>
-      <nav>
-      	<!--
+    	        --> 
+        
+        <img src="images/header.jpg" alt="" /> </header>
+    <nav> 
+        <!--
       	    ul (Unordered list) Lista desordenada
       	    or (Ordered List) Lista ordenada
       	    li (list element) Elemento de lista
       	    
       	    El atributo tagret="_blank" sirve para abrir la página en una nueva pestaña(tab).
       	    -->
-      	    <ul>
-      	    	<li>
-   	    		  <a href="#">Inicio</a>
-      	    	</li>
-      	    	<li><a href="#">Servicios</a></li>
-      	    	<li><a href="#">Productos</a></li>
-      	    	<li><a href="#">Galería</a></li>
-      	    	<li><a href="#">Contactos</a></li>
-      	    </ul>
-      	    <!--<ol>
+        <ul>
+            <li> <a href="#init">Inicio</a> </li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#contact">Contactos</a></li>
+        </ul>
+        <!--<ol>
       	    	<li>Opción 1</li>
       	    	<li>Opción 2</li>
       	    	<li>Opción 3</li>
-      	    </ol>-->
-      </nav>
-      <main></main>
-      <footer></footer>
-    </div>
-  </body>
+      	    </ol>--> 
+    </nav>
+    <main>
+        <section id="init" >
+            <h2>Inicio</h2>
+            <img src="images/1img.jpg" alt="" />
+            
+            <a href="#">Elemento en línea1</a>
+            <a href="#">Elemento en línea2</a>
+            <p>Lorem ipsum dot.</p>
+            <a href="#">Elemento en línea3</a>
+            
+            <p id="verde" class="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolore culpa laborum unde eos vitae, nesciunt quis eveniet optio animi, ratione repellat, commodi vero saepe labore dolores autem quos cum!</p>
+            <p>Dolore ut ducimus repellendus sequi maiores totam doloribus inventore, omnis asperiores laudantium dignissimos deserunt natus at quae nisi neque distinctio, ad porro dolor labore nam perferendis. Possimus, in aliquid distinctio.</p>
+        </section>
+        <section id="services" class="section section-services">
+            <h2>Servicios</h2>
+            <img src="images/2img.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laborum atque repellat nobis suscipit assumenda voluptatem esse voluptates temporibus facere, enim culpa. Quos, at saepe blanditiis, doloribus eaque illum nisi?</p>
+            <p>Et magni quibusdam ipsum ipsa itaque mollitia laudantium praesentium tempora, impedit deleniti provident voluptate laborum modi voluptatem quisquam quia sint tempore est ratione repellendus fuga doloribus officia repellat doloremque? Ratione!</p>
+        </section>
+        <section id="products" >
+            <h2>Productos</h2>
+            <img src="images/3img.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur praesentium, non quae itaque repudiandae iste. Culpa adipisci eum illo quas, eveniet corporis voluptas accusamus laudantium voluptatem in, impedit, nemo repellat!</p>
+            <p>Asperiores, nisi quos distinctio ipsum neque itaque officia aliquam vitae ullam, laudantium tempore consequatur molestias delectus porro laborum ea, nemo dolore eius adipisci labore? In incidunt nisi aliquam atque aliquid.</p>
+        </section>
+        <section id="gallery" >
+            <h2>Galería</h2>
+            <img src="images/4img.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque temporibus porro distinctio repudiandae eum dolore commodi itaque ut perspiciatis nostrum officia fugit animi, quis eaque alias ex cumque, delectus nulla?</p>
+            <p>Quis accusamus soluta totam ad repudiandae dignissimos odio quasi eveniet modi aut deserunt dolores quod sed, sunt molestias ducimus hic, officiis pariatur fuga inventore. Eaque, deleniti non dicta ad tempore?</p>
+        </section>
+        <section id="contact" >
+            <h2>Contacto</h2>
+            <img src="images/5img.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi distinctio, perspiciatis dicta est nemo ad possimus voluptatem quia quas sequi iusto similique tenetur ipsa ut aliquid facilis animi, veniam nobis.</p>
+            <p>Obcaecati recusandae assumenda accusantium reiciendis sint, veritatis, itaque cum delectus, enim asperiores quos dicta harum officia quia eius saepe aliquam sunt. Dolorem veritatis porro, molestias ab, repellendus quisquam quas officia!</p>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados | edumac 2018 | Miguel Pg</p>
+    </footer>
+</div>
+<!-- 
+   Reglas y convenciones de Valores del atributo "id":
+   Reglas:
+1.- no espacios
+2.- no caracteres especiales
+3.- no guión bajo
+  
+   Convenciones:
+   - Siempre en inglés. 
+    -utilizar formato CamelCase - LowerCase:
+      -CamelCase-LowerCase: sectionServices | mySectionServices | mySectionServicesWeb
+      ¨(CamelCase-UpperCase: SectionServices) este NO, solo es referencia. 
+      
+      Reglas y convenciones de Valores del atributo "class":
+   Reglas:
+1.- no espacios
+2.- no caracteres especiales
+3.- no guión bajo
+  
+   Convenciones:
+   - Siempre en inglés. 
+    -utilizar formato CamelCase - LowerCase:
+      -Siempre minusculas y palabras separadas por guión medio
+      
+       Section-services
+       
+      
+   -->
+</body>
 </html>
