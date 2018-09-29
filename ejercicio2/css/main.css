@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+
+/* Font Awesome*/
+@import url("lib/all.css"); 
+
+/* Generals */
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+h1:first-child, 
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,{
+    margin-top: 0; 
+
+}
+
+/* Header */
+.page-header {
+    position: relative;
+}
+.page-header h1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px #999;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+/* Nav */
+.page-nav ul {
+    background-color: #333;
+}
+.page-nav li {
+    float: left;
+}
+.page-nav a {
+    display: inline-block;
+    color: #ccc;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s;
+}
+.page-nav a:hover {
+    background-color: #df007a;
+    color: #fff;
+}
+
+/* Main */
+.page-main {
+padding: 65px 0;
+}
+
+.left {
+    
+    width: 31.33%;
+    float: left;
+    padding-right: 1%; 
+}
+.right {
+    
+    width: 65.66%;
+    float: right;
+   padding-left: 1%;
+}
+
+
+/* Footer */
+ .page-footer {
+     background-color: #999;
+     padding: 16px 0;
+     
+ }
+ .page-footer p {
+color: rgb(248, 239, 239);
+text-align: center;
+margin: 0;
+ }
+
+
+/* Helpers */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: block;
+}
+.clearfix:after {
+    clear: both;
+}
