@@ -91,6 +91,21 @@ padding: 65px 0;
    padding-left: 1%;
 }
 
+/* Gallery */
+
+.gallery-list li {
+    display: inline-block;
+    margin: 10px;
+}
+.gallery-list img {
+    border: 5px solid #fff;
+    box-shadow: 0 0 6px #999;
+    transition: all .3s ;
+}
+.gallery-list img:hover {
+    box-shadow: 0 0 12px #999;
+}
+
 
 /* Footer */
  .page-footer {
